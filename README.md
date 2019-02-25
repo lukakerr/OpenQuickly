@@ -39,3 +39,12 @@ Options include:
 - Material (i.e. theme/window appearance)
 
 If there are any options you think are missing, please raise an issue.
+
+### Screenshots
+
+<p align="center">
+  <img src="https://i.imgur.com/PLCRasq.png" width="400">
+  <img src="https://i.imgur.com/SPOwsbN.png" width="400">
+  <br>
+  <img src="https://i.imgur.com/w4lh0YW.png">
+</p>
