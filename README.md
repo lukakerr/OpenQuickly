@@ -11,13 +11,7 @@ A custom macOS window that imitates macOS' Spotlight, written in Swift.
 #### CocoaPods
 
 ```ruby
-source 'https://github.com/CocoaPods/Specs.git'
-use_frameworks!
-platform :osx, '10.12'
-
-target 'MyApp' do
-  pod 'OpenQuickly', :git => 'https://github.com/lukakerr/OpenQuickly.git'
-end
+pod 'OpenQuickly', :git => 'https://github.com/lukakerr/OpenQuickly.git'
 ```
 
 ### Usage
