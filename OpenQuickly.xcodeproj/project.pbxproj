@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A101E65522239A9400FA438D /* OpenQuickly.h in Headers */ = {isa = PBXBuildFile; fileRef = A101E65322239A9400FA438D /* OpenQuickly.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A101E66222239AB700FA438D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101E66122239AB700FA438D /* AppDelegate.swift */; };
+		A101E66422239AB700FA438D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101E66322239AB700FA438D /* ViewController.swift */; };
+		A101E66622239AB700FA438D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A101E66522239AB700FA438D /* Assets.xcassets */; };
+		A101E66922239AB700FA438D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A101E66722239AB700FA438D /* Main.storyboard */; };
+		A101E67022239AC600FA438D /* OpenQuicklyWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101E66F22239AC600FA438D /* OpenQuicklyWindowController.swift */; };
+		A101E67222239ACE00FA438D /* OpenQuicklyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101E67122239ACE00FA438D /* OpenQuicklyViewController.swift */; };
+		A101E67422239B2600FA438D /* OpenQuicklyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101E67322239B2600FA438D /* OpenQuicklyWindow.swift */; };
+		A101E67522239C7700FA438D /* OpenQuickly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A101E65022239A9400FA438D /* OpenQuickly.framework */; };
+		A101E67622239C7700FA438D /* OpenQuickly.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A101E65022239A9400FA438D /* OpenQuickly.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A101E67B22239CFE00FA438D /* OpenQuicklyOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101E67A22239CFE00FA438D /* OpenQuicklyOptions.swift */; };
+		A101E67D2223A13700FA438D /* OpenQuicklyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101E67C2223A13700FA438D /* OpenQuicklyDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A101E67722239C7700FA438D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A101E64722239A9400FA438D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A101E64F22239A9400FA438D;
+			remoteInfo = OpenQuickly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A101E67922239C7700FA438D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A101E67622239C7700FA438D /* OpenQuickly.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A101E65022239A9400FA438D /* OpenQuickly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenQuickly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A101E65322239A9400FA438D /* OpenQuickly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenQuickly.h; sourceTree = "<group>"; };
+		A101E65422239A9400FA438D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A101E65F22239AB700FA438D /* OpenQuickly Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenQuickly Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A101E66122239AB700FA438D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A101E66322239AB700FA438D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A101E66522239AB700FA438D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A101E66822239AB700FA438D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A101E66A22239AB700FA438D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A101E66F22239AC600FA438D /* OpenQuicklyWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenQuicklyWindowController.swift; sourceTree = "<group>"; };
+		A101E67122239ACE00FA438D /* OpenQuicklyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenQuicklyViewController.swift; sourceTree = "<group>"; };
+		A101E67322239B2600FA438D /* OpenQuicklyWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenQuicklyWindow.swift; sourceTree = "<group>"; };
+		A101E67A22239CFE00FA438D /* OpenQuicklyOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenQuicklyOptions.swift; sourceTree = "<group>"; };
+		A101E67C2223A13700FA438D /* OpenQuicklyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenQuicklyDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A101E64D22239A9400FA438D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A101E65C22239AB700FA438D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A101E67522239C7700FA438D /* OpenQuickly.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A101E64622239A9400FA438D = {
+			isa = PBXGroup;
+			children = (
+				A101E65222239A9400FA438D /* OpenQuickly */,
+				A101E66022239AB700FA438D /* OpenQuickly Demo */,
+				A101E65122239A9400FA438D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A101E65122239A9400FA438D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A101E65022239A9400FA438D /* OpenQuickly.framework */,
+				A101E65F22239AB700FA438D /* OpenQuickly Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A101E65222239A9400FA438D /* OpenQuickly */ = {
+			isa = PBXGroup;
+			children = (
+				A101E65422239A9400FA438D /* Info.plist */,
+				A101E65322239A9400FA438D /* OpenQuickly.h */,
+				A101E67C2223A13700FA438D /* OpenQuicklyDelegate.swift */,
+				A101E67A22239CFE00FA438D /* OpenQuicklyOptions.swift */,
+				A101E67122239ACE00FA438D /* OpenQuicklyViewController.swift */,
+				A101E67322239B2600FA438D /* OpenQuicklyWindow.swift */,
+				A101E66F22239AC600FA438D /* OpenQuicklyWindowController.swift */,
+			);
+			path = OpenQuickly;
+			sourceTree = "<group>";
+		};
+		A101E66022239AB700FA438D /* OpenQuickly Demo */ = {
+			isa = PBXGroup;
+			children = (
+				A101E66122239AB700FA438D /* AppDelegate.swift */,
+				A101E66322239AB700FA438D /* ViewController.swift */,
+				A101E66522239AB700FA438D /* Assets.xcassets */,
+				A101E66722239AB700FA438D /* Main.storyboard */,
+				A101E66A22239AB700FA438D /* Info.plist */,
+			);
+			path = "OpenQuickly Demo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A101E64B22239A9400FA438D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A101E65522239A9400FA438D /* OpenQuickly.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A101E64F22239A9400FA438D /* OpenQuickly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A101E65822239A9400FA438D /* Build configuration list for PBXNativeTarget "OpenQuickly" */;
+			buildPhases = (
+				A101E64B22239A9400FA438D /* Headers */,
+				A101E64C22239A9400FA438D /* Sources */,
+				A101E64D22239A9400FA438D /* Frameworks */,
+				A101E64E22239A9400FA438D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenQuickly;
+			productName = OpenQuickly;
+			productReference = A101E65022239A9400FA438D /* OpenQuickly.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A101E65E22239AB700FA438D /* OpenQuickly Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A101E66C22239AB700FA438D /* Build configuration list for PBXNativeTarget "OpenQuickly Demo" */;
+			buildPhases = (
+				A101E65B22239AB700FA438D /* Sources */,
+				A101E65C22239AB700FA438D /* Frameworks */,
+				A101E65D22239AB700FA438D /* Resources */,
+				A101E67922239C7700FA438D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A101E67822239C7700FA438D /* PBXTargetDependency */,
+			);
+			name = "OpenQuickly Demo";
+			productName = "OpenQuickly Demo";
+			productReference = A101E65F22239AB700FA438D /* OpenQuickly Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A101E64722239A9400FA438D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Luka Kerr";
+				TargetAttributes = {
+					A101E64F22239A9400FA438D = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					A101E65E22239AB700FA438D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = A101E64A22239A9400FA438D /* Build configuration list for PBXProject "OpenQuickly" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A101E64622239A9400FA438D;
+			productRefGroup = A101E65122239A9400FA438D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A101E64F22239A9400FA438D /* OpenQuickly */,
+				A101E65E22239AB700FA438D /* OpenQuickly Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A101E64E22239A9400FA438D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A101E65D22239AB700FA438D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A101E66622239AB700FA438D /* Assets.xcassets in Resources */,
+				A101E66922239AB700FA438D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A101E64C22239A9400FA438D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A101E67422239B2600FA438D /* OpenQuicklyWindow.swift in Sources */,
+				A101E67022239AC600FA438D /* OpenQuicklyWindowController.swift in Sources */,
+				A101E67222239ACE00FA438D /* OpenQuicklyViewController.swift in Sources */,
+				A101E67D2223A13700FA438D /* OpenQuicklyDelegate.swift in Sources */,
+				A101E67B22239CFE00FA438D /* OpenQuicklyOptions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A101E65B22239AB700FA438D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A101E66422239AB700FA438D /* ViewController.swift in Sources */,
+				A101E66222239AB700FA438D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A101E67822239C7700FA438D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A101E64F22239A9400FA438D /* OpenQuickly */;
+			targetProxy = A101E67722239C7700FA438D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A101E66722239AB700FA438D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A101E66822239AB700FA438D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A101E65622239A9400FA438D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A101E65722239A9400FA438D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A101E65922239A9400FA438D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = OpenQuickly/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.lukakerr.OpenQuickly;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		A101E65A22239A9400FA438D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = OpenQuickly/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.lukakerr.OpenQuickly;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		A101E66D22239AB700FA438D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "OpenQuickly Demo/OpenQuickly_Demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "OpenQuickly Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.lukakerr.OpenQuickly-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		A101E66E22239AB700FA438D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "OpenQuickly Demo/OpenQuickly_Demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "OpenQuickly Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.lukakerr.OpenQuickly-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A101E64A22239A9400FA438D /* Build configuration list for PBXProject "OpenQuickly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A101E65622239A9400FA438D /* Debug */,
+				A101E65722239A9400FA438D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A101E65822239A9400FA438D /* Build configuration list for PBXNativeTarget "OpenQuickly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A101E65922239A9400FA438D /* Debug */,
+				A101E65A22239A9400FA438D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A101E66C22239AB700FA438D /* Build configuration list for PBXNativeTarget "OpenQuickly Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A101E66D22239AB700FA438D /* Debug */,
+				A101E66E22239AB700FA438D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A101E64722239A9400FA438D /* Project object */;
+}
