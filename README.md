@@ -4,7 +4,7 @@
 [![Platform](http://img.shields.io/badge/platform-macOS-red.svg?style=flat)](https://developer.apple.com/macos/)
 [![Github](http://img.shields.io/badge/github-lukakerr-green.svg?style=flat)](https://github.com/lukakerr)
 
-A custom macOS window that imitates macOS' Spotlight, written in Swift.
+A custom 'open quickly' window that imitates macOS' Spotlight, written in Swift.
 
 ### Installation
 
