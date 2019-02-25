@@ -50,6 +50,10 @@ row in the matches list.
 <p align="center">
   <img src="https://i.imgur.com/PLCRasq.png" width="400">
   <img src="https://i.imgur.com/SPOwsbN.png" width="400">
-  <br>
-  <img src="https://i.imgur.com/w4lh0YW.png">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="https://i.imgur.com/SVMAjEJ.png" width="600">
 </p>
