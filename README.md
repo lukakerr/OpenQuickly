@@ -16,7 +16,7 @@ pod 'OpenQuickly', :git => 'https://github.com/lukakerr/OpenQuickly.git'
 
 ### Usage
 
-A demo can be found at [OpenQuickly Demo](./OpenQuickly Demo).
+A demo can be found at [OpenQuickly Demo](./OpenQuickly%20Demo).
 
 Most of the functionality is provided already, but some options can be implemented to control the look and feel of the OpenQuickly dialog.
 
