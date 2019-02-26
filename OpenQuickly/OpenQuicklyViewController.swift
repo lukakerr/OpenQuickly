@@ -10,7 +10,10 @@ import Cocoa
 
 class OpenQuicklyViewController: NSViewController, NSTextFieldDelegate {
 
-  let ESC_KEYCODE = 53
+  let ESC_KEYCODE: UInt16 = 53
+  let DOWN_ARROW_KEYCODE: UInt16 = 125
+  let UP_ARROW_KEYCODE: UInt16 = 126
+  let ENTER_KEYCODE: UInt16 = 36
 
   /// The data used to display the matches
   private var matches: [Any]!
@@ -71,6 +74,8 @@ class OpenQuicklyViewController: NSViewController, NSTextFieldDelegate {
     view.addSubview(transparentView)
 
     setupConstraints()
+
+    matchesList.doubleAction = #selector(itemSelected)
   }
 
   override func viewWillAppear() {
@@ -88,8 +93,19 @@ class OpenQuicklyViewController: NSViewController, NSTextFieldDelegate {
   }
 
   override func keyUp(with event: NSEvent) {
-    if event.keyCode == ESC_KEYCODE {
+    let keyCode = event.keyCode
+
+    if keyCode == ESC_KEYCODE {
       openQuicklyWindowController?.toggle()
+      return
+    }
+
+    if keyCode == ENTER_KEYCODE {
+      itemSelected()
+      return
+    }
+
+    if [DOWN_ARROW_KEYCODE, UP_ARROW_KEYCODE].contains(keyCode) {
       return
     }
 
@@ -98,6 +114,16 @@ class OpenQuicklyViewController: NSViewController, NSTextFieldDelegate {
     matches = options.delegate?.valueWasEntered(value)
 
     reloadMatches()
+  }
+
+  @objc func itemSelected() {
+    let selected = matchesList.item(atRow: matchesList.selectedRow) as Any
+
+    if let delegate = options.delegate {
+      delegate.itemWasSelected(selected: selected)
+    }
+
+    openQuicklyWindowController?.toggle()
   }
 
   // MARK: - UI management
@@ -234,17 +260,6 @@ extension OpenQuicklyViewController: NSOutlineViewDataSource {
   /// When an item in the matches list is clicked on should it be selected
   func outlineView(_ outlineView: NSOutlineView, shouldSelectItem item: Any) -> Bool {
     return true
-  }
-
-  /// When an item in the matches list is selected
-  func outlineViewSelectionDidChange(_ notification: Notification) {
-    let selected = matchesList.item(atRow: matchesList.selectedRow) as Any
-
-    if let delegate = options.delegate {
-      delegate.itemWasSelected(selected: selected)
-    }
-
-    openQuicklyWindowController?.toggle()
   }
 
 }
