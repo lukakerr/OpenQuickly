@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class OpenQuicklyWindow: NSWindow {
+class OpenQuicklyWindow: NSWindow, NSWindowDelegate {
 
   override init(
     contentRect: NSRect,
@@ -23,6 +23,11 @@ class OpenQuicklyWindow: NSWindow {
     self.backgroundColor = .clear
     self.isOpaque = false
     self.isMovableByWindowBackground = true
+    self.delegate = self
+  }
+
+  func windowDidResignKey(_ notification: Notification) {
+    windowController?.close()
   }
 
   override var canBecomeKey: Bool {
