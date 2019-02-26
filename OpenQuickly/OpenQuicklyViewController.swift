@@ -315,7 +315,12 @@ extension OpenQuicklyViewController: NSOutlineViewDataSource {
 
   /// The NSTableRowView instance to be used
   func outlineView(_ outlineView: NSOutlineView, rowViewForItem item: Any) -> NSTableRowView? {
-    return OpenQuicklyTableRowView(frame: NSZeroRect);
+    return OpenQuicklyTableRowView(frame: NSZeroRect)
+  }
+
+  /// When an item is selected
+  func outlineViewSelectionDidChange(_ notification: Notification) {
+    selected = matchesList.selectedRow
   }
 
 }
