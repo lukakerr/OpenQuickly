@@ -8,18 +8,29 @@
 
 import Cocoa
 
+enum KeyCode {
+  static let esc: UInt16 = 53
+  static let enter: UInt16 = 36
+  static let upArrow: UInt16 = 126
+  static let downArrow: UInt16 = 125
+}
+
 class OpenQuicklyViewController: NSViewController, NSTextFieldDelegate {
 
-  let ESC_KEYCODE: UInt16 = 53
-  let DOWN_ARROW_KEYCODE: UInt16 = 125
-  let UP_ARROW_KEYCODE: UInt16 = 126
-  let ENTER_KEYCODE: UInt16 = 36
+  /// KeyCodes that shouldn't update the searchField
+  let IGNORED_KEYCODES = [
+    KeyCode.esc, KeyCode.enter,
+    KeyCode.upArrow, KeyCode.downArrow
+  ]
 
   /// The data used to display the matches
   private var matches: [Any]!
 
   /// Configuration options
   private var options: OpenQuicklyOptions!
+
+  /// The currently selected match
+  private var selected: Int?
 
   /// Various views
   private var clipView: NSClipView!
@@ -76,6 +87,8 @@ class OpenQuicklyViewController: NSViewController, NSTextFieldDelegate {
     setupConstraints()
 
     matchesList.doubleAction = #selector(itemSelected)
+
+    NSEvent.addLocalMonitorForEvents(matching: .keyDown, handler: keyDown)
   }
 
   override func viewWillAppear() {
@@ -92,20 +105,44 @@ class OpenQuicklyViewController: NSViewController, NSTextFieldDelegate {
     return true
   }
 
-  override func keyUp(with event: NSEvent) {
+  func keyDown(with event: NSEvent) -> NSEvent? {
     let keyCode = event.keyCode
 
-    if keyCode == ESC_KEYCODE {
+    // When esc pressed, close the window
+    if keyCode == KeyCode.esc {
       openQuicklyWindowController?.toggle()
-      return
+      return nil
     }
 
-    if keyCode == ENTER_KEYCODE {
+    // When enter pressed, indicate that an item was selected
+    if keyCode == KeyCode.enter {
       itemSelected()
-      return
+      return nil
     }
 
-    if [DOWN_ARROW_KEYCODE, UP_ARROW_KEYCODE].contains(keyCode) {
+    // When down arrow pressed, if there is a selection move it down
+    if keyCode == KeyCode.downArrow {
+      if let currentSelection = selected {
+        setSelected(at: currentSelection + 1)
+      }
+
+      return nil
+    }
+
+    // When uo arrow pressed, if there is a selection move it up
+    if keyCode == KeyCode.upArrow {
+      if let currentSelection = selected {
+        setSelected(at: currentSelection - 1)
+      }
+
+      return nil
+    }
+
+    return event
+  }
+
+  override func keyUp(with event: NSEvent) {
+    if IGNORED_KEYCODES.contains(event.keyCode) {
       return
     }
 
@@ -136,6 +173,20 @@ class OpenQuicklyViewController: NSViewController, NSTextFieldDelegate {
   private func reloadMatches() {
     matchesList.reloadData()
     updateViewSize()
+
+    if matches.count > 0 {
+      setSelected(at: 0)
+    }
+  }
+
+  private func setSelected(at index: Int) {
+    if index < 0 || index >= matches.count {
+      return
+    }
+
+    selected = index
+    let selectedIndex = IndexSet(integer: index)
+    matchesList.selectRowIndexes(selectedIndex, byExtendingSelection: false)
   }
 
   private func updateViewSize() {
@@ -260,6 +311,11 @@ extension OpenQuicklyViewController: NSOutlineViewDataSource {
   /// When an item in the matches list is clicked on should it be selected
   func outlineView(_ outlineView: NSOutlineView, shouldSelectItem item: Any) -> Bool {
     return true
+  }
+
+  /// The NSTableRowView instance to be used
+  func outlineView(_ outlineView: NSOutlineView, rowViewForItem item: Any) -> NSTableRowView? {
+    return OpenQuicklyTableRowView(frame: NSZeroRect);
   }
 
 }

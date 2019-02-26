@@ -19,6 +19,7 @@
 		A101E67622239C7700FA438D /* OpenQuickly.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A101E65022239A9400FA438D /* OpenQuickly.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A101E67B22239CFE00FA438D /* OpenQuicklyOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101E67A22239CFE00FA438D /* OpenQuicklyOptions.swift */; };
 		A101E67D2223A13700FA438D /* OpenQuicklyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101E67C2223A13700FA438D /* OpenQuicklyDelegate.swift */; };
+		A10BB0162224FDB2000B204B /* OpenQuicklyTableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10BB0152224FDB2000B204B /* OpenQuicklyTableRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		A101E67322239B2600FA438D /* OpenQuicklyWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenQuicklyWindow.swift; sourceTree = "<group>"; };
 		A101E67A22239CFE00FA438D /* OpenQuicklyOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenQuicklyOptions.swift; sourceTree = "<group>"; };
 		A101E67C2223A13700FA438D /* OpenQuicklyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenQuicklyDelegate.swift; sourceTree = "<group>"; };
+		A10BB0152224FDB2000B204B /* OpenQuicklyTableRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenQuicklyTableRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				A101E67122239ACE00FA438D /* OpenQuicklyViewController.swift */,
 				A101E67322239B2600FA438D /* OpenQuicklyWindow.swift */,
 				A101E66F22239AC600FA438D /* OpenQuicklyWindowController.swift */,
+				A10BB0152224FDB2000B204B /* OpenQuicklyTableRowView.swift */,
 			);
 			path = OpenQuickly;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			files = (
 				A101E67422239B2600FA438D /* OpenQuicklyWindow.swift in Sources */,
 				A101E67022239AC600FA438D /* OpenQuicklyWindowController.swift in Sources */,
+				A10BB0162224FDB2000B204B /* OpenQuicklyTableRowView.swift in Sources */,
 				A101E67222239ACE00FA438D /* OpenQuicklyViewController.swift in Sources */,
 				A101E67D2223A13700FA438D /* OpenQuicklyDelegate.swift in Sources */,
 				A101E67B22239CFE00FA438D /* OpenQuicklyOptions.swift in Sources */,
