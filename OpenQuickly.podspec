@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/lukakerr/OpenQuickly.git', :tag => s.version.to_s }
 
   s.osx.deployment_target = '10.12'
+  s.swift_version = '4.2'
 
   s.source_files = 'OpenQuickly/**/*'
   s.public_header_files = 'OpenQuickly/*.h'
