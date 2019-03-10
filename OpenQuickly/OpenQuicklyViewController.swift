@@ -186,6 +186,7 @@ class OpenQuicklyViewController: NSViewController, NSTextFieldDelegate {
 
     selected = index
     let selectedIndex = IndexSet(integer: index)
+    matchesList.scrollRowToVisible(index)
     matchesList.selectRowIndexes(selectedIndex, byExtendingSelection: false)
   }
 
