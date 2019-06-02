@@ -12,21 +12,34 @@ open class OpenQuicklyWindowController: NSWindowController {
 
   let AUTOSAVE_NAME = "OpenQuicklyWindow"
 
+  var options: OpenQuicklyOptions!
+
+  private var windowIsVisible: Bool {
+    return window?.isVisible ?? false
+  }
+
   public convenience init(options: OpenQuicklyOptions) {
     let oqvc = OpenQuicklyViewController(options: options)
     let window = OpenQuicklyWindow(contentViewController: oqvc)
 
     self.init(window: window)
 
+    self.options = options
+
     if options.persistPosition {
       window.setFrameAutosaveName(AUTOSAVE_NAME)
     }
   }
 
-  public func toggle() {
-    guard let visible = window?.isVisible else { return }
+  override open func close() {
+    if windowIsVisible {
+      options.delegate?.windowDidClose()
+      super.close()
+    }
+  }
 
-    if visible {
+  public func toggle() {
+    if windowIsVisible {
       close()
     } else {
       window?.makeKeyAndOrderFront(self)

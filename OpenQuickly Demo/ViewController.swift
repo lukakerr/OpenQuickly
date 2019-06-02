@@ -154,5 +154,9 @@ extension ViewController: OpenQuicklyDelegate {
     print("\(language.name) was selected")
   }
 
+  func windowDidClose() {
+    print("Window did close")
+  }
+
 }
 

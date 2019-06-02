@@ -33,4 +33,7 @@ public protocol OpenQuicklyDelegate {
   /// - Returns: A view to display the given item in the matches list
   func openQuickly(item: Any) -> NSView?
 
+  /// Called when the open quickly window is closed
+  func windowDidClose()
+
 }
